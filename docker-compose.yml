@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sampleawscontainerizedapp:
+    image: ${DOCKER_REGISTRY}sampleawscontainerizedapp
+    build:
+      context: .
+      dockerfile: SampleAWSContainerizedApp/Dockerfile
